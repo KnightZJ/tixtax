@@ -1,12 +1,12 @@
 
+enum RoomStatus {
+    Available,
+    Full,
+    RedRoom,
+    BlueRoom
+};
 class TixTaxGame {
 public:
-    enum RoomStatus {
-        Available,
-        Full,
-        RedRoom,
-        BlueRoom
-    };
     class Room {
     public:
         enum CellColor {
@@ -24,9 +24,9 @@ public:
     };
 public:
     TixTaxGame();
-    void init();
+    void start();
 private:
     Room rooms[3][3];
-    RoomStatus roomStatus[3][3];
+    int redroom, blueroom;
     int round;
 };
