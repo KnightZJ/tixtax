@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.22)
 project(tixtax)
 
 include_directories("include")
